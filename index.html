@@ -7,7 +7,25 @@
 </head>
 <body>
     <form action="">
-        <input type="">
+        <label for="nik">NIK :</label>
+        <input type="text" name="nik" id="nik" size="10" maxlength="10" required placeholder="123">
+        <br><br>
+        <label for="nama">Nama :</label>
+        <input type="text" name="nama" id="nama">
+        <br><br>
+        <label for="tangal">Tanggal :</label>
+        <input type="date" name="tanggal" id="tanggal" required min="2022-01-11">
+        <br><br>
+        <label for="gaji_pokok">Gaji :</label>
+        <input type="number" name="gaji_pokok" id="gaji_pokok" step="0.1" required min="1000000" step="1000">
+        <br><br>
+        <label for="status">Status Karyawan :</label><br>
+        <input type="radio" name="tetap" id="tetap" value="TETAP">Tetap<br>
+        <input type="radio" name="magang" id="magang" value="MAGANG">Magang<br>
+        <input type="radio" name="kontrak" id="kontrak" value="KONTRAK">Kontrak
+        <br><br>
+        <input type="submit" id="btn_submit" name="btn_submit" value="Submit">
+        <input type="reset" id="btn_reset" name="btn_reset" value="Reset">
     </form>
 </body>
 </html>
